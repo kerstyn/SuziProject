@@ -1,0 +1,40 @@
+div {
+}
+#topCentre {
+    height: 20%;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    background-color: #fed325;
+}
+.logo {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+}
+#contentBlock {
+    height: 80%;
+    text-align: center;
+    background-color: #fed325;
+}
+#centreBlock {
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    background-color: #fed325;
+}
+#leftBlock {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    background-color: #25effe;
+    margin-left: -1%;
+}
+#rightBlock {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    background-color: #25effe;
+    margin-right: -1;
+}
