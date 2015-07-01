@@ -11,3 +11,6 @@ class Question(models.Model):
 
     def __str__(self):
         return self.question
+
+    def get_values(self):
+        return self.author

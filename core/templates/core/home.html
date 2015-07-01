@@ -1,6 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     {% load staticfiles %}
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static "css/core.css" %}">
@@ -14,13 +16,17 @@
         </div>
         <div id="contentBlock">
             <div id = "leftBlock">
-                leftBlock
+
             </div>
             <div id = "centreBlock" >
-                This is the centreBlock
+                <h3>{{all_q.0.question}}</h3>
             </div>
             <div id = "rightBlock">
-                This is the rightBlock
+                <h4> Other questions</h4>
+                {% for quest in questions %}
+                    <h4></h4><a href="">{{ quest.question }}</a></h4>
+                    <p>{{ quest.text|linebreaks }}</p>
+                {% endfor %}
             </div>
         </div>
 
